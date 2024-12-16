@@ -1,0 +1,127 @@
+.promo {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .promo__left {
+    flex: 1;
+    background-color: #1da1f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .promo__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .promo__logo-text {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .promo__right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .promo__title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #0f1419;
+  }
+  
+  .promo__subtitle {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #0f1419;
+  }
+  
+  .promo__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+  }
+  
+  .promo__button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .promo__button--signup {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+  }
+  
+  .promo__button--signup:hover {
+    background-color: #1a91da;
+    transform: translateY(-2px);
+  }
+  
+  .promo__button--login {
+    background-color: transparent;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+  }
+  
+  .promo__button--login:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .promo {
+      flex-direction: column;
+    }
+    
+    .promo__logo-text {
+      font-size: 48px;
+    }
+    
+    .promo__title {
+      font-size: 42px;
+    }
+    
+    .promo__subtitle {
+      font-size: 24px;
+    }
+    
+    .promo__left {
+      height: 30vh;
+    }
+    
+    .promo__right {
+      height: 70vh;
+      padding: 20px;
+    }
+  }
