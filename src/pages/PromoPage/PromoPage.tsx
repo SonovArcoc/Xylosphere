@@ -1,5 +1,6 @@
 import React from 'react';
 import './PromoPage.css';
+import { Link } from 'react-router-dom';
 
 export const PromoPage: React.FC = () => {
   return (
@@ -15,12 +16,12 @@ export const PromoPage: React.FC = () => {
         <h2 className="promo__subtitle">Присоединяйтесь к Xylosphere сегодня.</h2>
         
         <div className="promo__buttons">
-          <button className="promo__button promo__button--signup">
+          <Link to="/register" className="promo__button promo__button--signup">
             Зарегистрироваться
-          </button>
-          <button className="promo__button promo__button--login">
+          </Link>
+          <Link to="/login" className="promo__button promo__button--login">
             Войти
-          </button>
+          </Link>
         </div>
       </div>
     </div>
